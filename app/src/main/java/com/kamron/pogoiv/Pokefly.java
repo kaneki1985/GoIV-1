@@ -956,12 +956,7 @@ public class Pokefly extends Service {
                 }
             }
         } else {
-            if (evolutionLine.size()>intSelectedPokemon){
-                selectedPokemon = evolutionLine.get(intSelectedPokemon);
-            }else{
-                selectedPokemon = evolutionLine.get(0);
-            }
-
+            selectedPokemon = evolutionLine.get(intSelectedPokemon);
         }
 
         extendedEvolutionSpinner.setEnabled(extendedEvolutionSpinner.getCount() > 1);
